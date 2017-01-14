@@ -1,6 +1,6 @@
 #include "myobject.h"
 
-void napi_create_object(napi_env env, napi_func_cb_info info) {
+void napi_create_object(napi_env env, napi_callback_info info) {
   napi_value args[1];
   napi_get_cb_args(env, info, args, 1);
   napi_set_return_value(env, info, MyObject::NewInstance(env, args[0]));

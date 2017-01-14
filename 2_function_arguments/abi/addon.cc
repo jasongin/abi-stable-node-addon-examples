@@ -1,6 +1,6 @@
 #include <node_jsvmapi.h>
 
-void Add(napi_env env, napi_func_cb_info info) {
+void Add(napi_env env, napi_callback_info info) {
   if (napi_get_cb_args_length(env, info) < 2) {
     napi_throw(
           env,

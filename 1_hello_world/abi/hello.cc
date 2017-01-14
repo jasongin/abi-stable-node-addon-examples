@@ -1,6 +1,6 @@
 #include <node_jsvmapi.h>
 
-void Method(napi_env env, napi_func_cb_info info) {
+void Method(napi_env env, napi_callback_info info) {
   napi_set_return_value(
         env,
         info,
